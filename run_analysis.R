@@ -74,8 +74,7 @@ traintest_grouped <- group_by(traintest,subject,activity)
 traintest_summary <- summarize_each(traintest_grouped,funs(mean))
 
 # write processed dataframes to directory as csv for later use
-write.csv(traintest,file="traintest.csv",quote=FALSE,row.names=FALSE)
-write.csv(traintest_summary,file="traintest_summary.csv",quote=FALSE,row.names=FALSE)
+write.table(traintest_summary,file="traintest_summary.txt",row.names=FALSE,quote=FALSE)
 
 # remove extra files
 rm(list=ls(pattern="^test"))

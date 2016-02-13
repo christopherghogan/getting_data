@@ -52,5 +52,7 @@ Script run_analysis.R takes raw data from source cited above and does the follow
 	6) Select measurements of mean [mean()] and standard deviation [std()] only
 	7) Tack on data to identify subject and activity being completed
 	8) Combine data for testing and training
-	9) Average mean() and std() for each subject and each activity
-	10) Output tidy dataset to "traintest_summary.csv"
+	9) Averages mean and standard deviations for each subject and each activity
+	10) Outputs tidy dataset to "traintest_summary.csv"
+
+	
